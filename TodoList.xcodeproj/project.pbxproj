@@ -14,6 +14,7 @@
 		DF75CE112C1EDFD100BC1A02 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF75CE102C1EDFD100BC1A02 /* Assets.xcassets */; };
 		DF75CE142C1EDFD100BC1A02 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF75CE132C1EDFD100BC1A02 /* Preview Assets.xcassets */; };
 		DF93478A2C52BA1400FC1E57 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9347892C52BA1400FC1E57 /* ItemModel.swift */; };
+		DF94A2932C54CCBA00F7F874 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF94A2922C54CCBA00F7F874 /* ListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		DF75CE102C1EDFD100BC1A02 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DF75CE132C1EDFD100BC1A02 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DF9347892C52BA1400FC1E57 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
+		DF94A2922C54CCBA00F7F874 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 			children = (
 				DF75CE0C2C1EDFD000BC1A02 /* TodoListApp.swift */,
 				DF9347882C52B9F100FC1E57 /* Models */,
+				DF94A2912C54CC7800F7F874 /* ViewModels */,
 				DF52EE852C21FA9600B388EF /* Views */,
 				DF75CE102C1EDFD100BC1A02 /* Assets.xcassets */,
 				DF75CE122C1EDFD100BC1A02 /* Preview Content */,
@@ -90,6 +93,14 @@
 				DF9347892C52BA1400FC1E57 /* ItemModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		DF94A2912C54CC7800F7F874 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				DF94A2922C54CCBA00F7F874 /* ListViewModel.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +175,7 @@
 			files = (
 				DF93478A2C52BA1400FC1E57 /* ItemModel.swift in Sources */,
 				DF2A94DB2C4E282E00DED80E /* AddView.swift in Sources */,
+				DF94A2932C54CCBA00F7F874 /* ListViewModel.swift in Sources */,
 				DF75CE0D2C1EDFD000BC1A02 /* TodoListApp.swift in Sources */,
 				DF52EE872C21FABF00B388EF /* ListView.swift in Sources */,
 				DF2A94D92C4E1F6000DED80E /* ListRowView.swift in Sources */,
