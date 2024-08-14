@@ -7,8 +7,29 @@
 
 import Foundation
 
-struct ItemModel: Identifiable {
-    let id: String = UUID().uuidString
+///immutable struct --> let word insterd of var
+struct ItemModel: Identifiable, Codable {
+    let id: String
     let title: String
     let isCompleted: Bool
-}
+    
+    init(id: String = UUID().uuidString, title: String, isCompleted: Bool) {
+        self.id = id
+        self.title = title
+        self.isCompleted = isCompleted
+    }
+    
+    func updateCompletion() -> ItemModel {
+        return ItemModel(id: id, title: title, isCompleted: !isCompleted)
+    }
+    
+    
+    }
+
+
+
+////when we create new items, use this
+//ItemModel(title: <#T##String#>, isCompleted: <#T##Bool#>)
+
+////when we update items because we already have id
+//ItemModel(id: <#T##String#>, title: <#T##String#>, isCompleted: <#T##Bool#>)
